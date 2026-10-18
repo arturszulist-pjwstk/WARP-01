@@ -3,6 +3,12 @@
 To jest całkowicie normalny plik README
 
 ## uruchomienie
-\`\`\`bash
+
+```bash
 dotnet run
-\`\`\`
+```
+
+
+
+Autor; Grzegorz Brzęczyszczykiewicz
+
