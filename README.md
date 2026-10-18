@@ -5,6 +5,8 @@ To jest całkowicie normalny plik README
 ## uruchomienie
 
 ```bash
+
+```bash
 dotnet run
 ```
 
@@ -13,4 +15,10 @@ dotnet run
 \## Kontakt
 
 Autor: Artur Szulist
+
+```
+
+
+
+Autor; Grzegorz Brzęczyszczykiewicz
 
