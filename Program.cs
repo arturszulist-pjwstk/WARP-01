@@ -2,8 +2,8 @@
 while(true)
 {
     Console.Write("Podaj liczbę tur od 1 do 10: ");
-    bool poprawnyFormat = int.TryParse(Console.ReadLine(), out liczbaTur);
-    
+    bool poprawnyFormat = true;//= int.TryParse(Console.ReadLine(), out liczbaTur);
+    liczbaTur = 4;
     if (!poprawnyFormat)
     {
         Console.WriteLine("Wpisz liczbę całkowitą.");
