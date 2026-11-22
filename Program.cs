@@ -1,27 +1,28 @@
-﻿// Console.Write("Hello,");
-// Console.WriteLine(" World!");
-// Console.Write("Hello, World!");
-// int a = 6;
-// float b = 6.5f;
-// double c = 3.3d;
-// string d = "artur";
-// char e = 'a';
-// Console.Write("Podaj swoje imię: ");
-// d = Console.ReadLine()!;
-// Console.WriteLine($"| Imię: {d} |");
+﻿int liczbaTur;
+while(true)
+{
+    Console.Write("Podaj liczbę tur od 1 do 10: ");
+    bool poprawnyFormat = int.TryParse(Console.ReadLine(), out liczbaTur);
+    
+    if (!poprawnyFormat)
+    {
+        Console.WriteLine("Wpisz liczbę całkowitą.");
+        continue;
+    }
 
-// Console.Write("podaj wiek: ");
-// string wiekString = Console.ReadLine()!; 
-// Console.Write("Twój wiek: "+wiekString);
-// Console.Write("Twój wiek za rok: "+wiekString+1);
-// int wiekInt = int.Parse(wiekString);
-// Console.Write("Twój wiek za rok: "+(wiekInt+1));
+    if (liczbaTur < 1)
+    {
+        Console.WriteLine("Liczba musi być większa od 0");
+        continue;
+    }
+    else if(liczbaTur > 10)
+    {
+        Console.WriteLine("Liczba musi być mniejsza od 11");
+        continue;
+    }
+    
+    Console.WriteLine("Poprawna wartość!");
+    break;
+}
 
-Console.Write("ile mikstur: ");
-int m = int.Parse(Console.ReadLine()!);
-
-int z = m*2;
-int k = m*3;
-
-Console.WriteLine($"łącznie: {z} ziół, oraz {k} kryształów");
-
+Console.WriteLine($"Wybrano {liczbaTur} tur.");
