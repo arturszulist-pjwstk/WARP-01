@@ -6,7 +6,7 @@ while(true)
     liczbaTur = 4;
     if (!poprawnyFormat)
     {
-        Console.WriteLine("Wpisz liczbę całkowitą.");
+        Console.WriteLine("Wpisz liczbę całkowitą...");
         continue;
     }
 
